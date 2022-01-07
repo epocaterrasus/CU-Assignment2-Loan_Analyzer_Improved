@@ -13,6 +13,7 @@ from pathlib import Path
 import csv
 
 from questionary.prompts.common import Choice
+from questionary.prompts.confirm import confirm
 
 from qualifier.utils.fileio import load_csv
 
@@ -143,12 +144,12 @@ def save_qualifying_loans(qualifying_loans):
 #This two lines of code verify if there are available loans to save, if there are none it returns a message telling the user to improve his credit conditions and exits the program
     if len(qualifying_loans) == 0:
         sys.exit("Please try to improve your credit score, debt-to-income ratio and loan-to-value ratio and try again!.")
-        
+
 #If there are available loans to save, it prompts the user to select whether he wants to save them or not using the questionary "Select" function, if the choice is "Yes" 
 # it calls the save_csv function, if choice is "No" it prints a Goodbye message and exits the system.
     else:
-        choice = questionary.select("Would you like to save the qualifying loans found in a .csv file?",choices=["Yes", "No"]).ask()
-        if choice == "Yes":
+        confirm = questionary.confirm("Would you like to save the qualifying loans found in a .csv file?").ask()
+        if confirm == True:
             save_csv(qualifying_loans)     
         else:
             sys.exit(f"Goodbye, good luck in your loan search!")
