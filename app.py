@@ -104,6 +104,32 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
+def save_csv(qualifying_loans):
+    """Allows the user to input a csv path to export his qualifying loans and then proceeds to write them into a csv file with a predetermined header.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+#This line of code asks the user where he would like to save his file using the questionary.text function, it also reminds them to add desired file name and extension
+    csvpath = questionary.text("Enter a file path to save your qualifying loans as a (.csv):, be sure to add the desired file name followed by the .csv extension, if you would like to save to the default press enter.").ask()
+
+#This line of code allows for the user to press enter on the previous prompt to select a default saving path
+    if csvpath == "":
+        csvpath = Path("../loan_qualifier_app/data/qualifying_loans.csv") 
+
+#Sets the header for the output file
+    header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]    
+    
+#Creates the csv file using the "csvpath" inputed or defaulted, proceeds to  write the header and each applicable loan as a row
+    with open(csvpath, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(header)
+        for row in qualifying_loans:
+            csvwriter.writerow(row)
+
+#Prints back the filepath of the save file to remind the user of where it has been saved
+    print(f"Your file has been saved to {csvpath}")
+
 
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
@@ -117,32 +143,15 @@ def save_qualifying_loans(qualifying_loans):
 #This two lines of code verify if there are available loans to save, if there are none it returns a message telling the user to improve his credit conditions and exits the program
     if len(qualifying_loans) == 0:
         sys.exit("Please try to improve your credit score, debt-to-income ratio and loan-to-value ratio and try again!.")
-#If there are available loans to save, it prompts the user to select whether he wants to save them or not using the questionary "Select" function, if the choice is "Yes" it prompts
-#to write a file path to save the file the qualifying loans, if choice is "No" it prints a Goodbye message and exits the system.
+        
+#If there are available loans to save, it prompts the user to select whether he wants to save them or not using the questionary "Select" function, if the choice is "Yes" 
+# it calls the save_csv function, if choice is "No" it prints a Goodbye message and exits the system.
     else:
         choice = questionary.select("Would you like to save the qualifying loans found in a .csv file?",choices=["Yes", "No"]).ask()
         if choice == "Yes":
-            csvpath = questionary.text("Enter a file path to save your qualifying loans as a (.csv):, be sure to add the desired file and .csv extension, if you would like to save to the default press enter.").ask()
-#This line of code allows for the user to press enter on the previous prompt to select a default saving path
-            if csvpath == "":
-                 csvpath = Path("../loan_qualifier_app/data/qualifying_loans.csv")    
+            save_csv(qualifying_loans)     
         else:
             sys.exit(f"Goodbye, good luck in your loan search!")
-
-    print(f"Your file has been saved to {csvpath}")
-
-#Sets the header for the output file
-    header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]    
-    
-#Creates the csv file using the "csvpath" determined above, writes the header
-    with open(csvpath, 'w', newline='') as csvfile:
-        csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(header)
-        for row in qualifying_loans:
-            csvwriter.writerow(row)
-    
-
-    
 
 def run():
     """The main function for running the script."""
