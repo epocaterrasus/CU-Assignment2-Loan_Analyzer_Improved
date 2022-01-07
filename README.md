@@ -11,9 +11,9 @@ Just after the title, introduce your project by describing attractively what the
 ## Technologies
 
 
-* Python – Version 3.9.7
-* Fire – Version 0.3.1
-* Questionary – Version 1.5.2
+* Python ï¿½ Version 3.9.7
+* Fire ï¿½ Version 0.3.1
+* Questionary ï¿½ Version 1.5.2
 * Path (from pathlib)
 * csv (adds classes to read/write tabular data)
 * sys
@@ -36,7 +36,7 @@ a. Installing Fire
 
 ![image](https://user-images.githubusercontent.com/94983278/148540562-7ba2de97-046a-48f8-919d-127144e24e67.png)
 
-To install Fire 0.3.1 use the following command in your GitBash/Terminal application “pip install fire==0.3.1”
+To install Fire 0.3.1 use the following command in your GitBash/Terminal application ï¿½pip install fire==0.3.1ï¿½
 
 If you require additional assistance installing Fire or would like to expand your knowledge of the library, here is a good resource from the developers: https://google.github.io/python-fire/guide/
 
@@ -45,19 +45,20 @@ b. Installing Questionary
 
 ![image](https://user-images.githubusercontent.com/94983278/148540628-f5b83a86-f3c6-4a98-bb41-cc04392ac398.png)
 
-To install Questionary 1.5.2 use the following command in your GitBash/Terminal application “pip install questionary==1.5.2”
+To install Questionary 1.5.2 use the following command in your GitBash/Terminal application ï¿½pip install questionary==1.5.2ï¿½
 
 If you require additional assistance installing Fire or would like to expand your knowledge of the library, here is a good resource from the developers: https://pypi.org/project/questionary/
 
 
 3. Installing the Loan Qualifier Application
 
-Navigate to your desired location where you would like to save the documents for this application. You can do this by using the “cd” command followed by a space and the file path inside quotations “”. In my example I have gone to Desktop.
+Navigate to your desired location where you would like to save the documents for this application. You can do this by using the ï¿½cdï¿½ command followed by a space and the file path inside quotations ï¿½ï¿½. In my example I have gone to Desktop.
 
 
 ![image](https://user-images.githubusercontent.com/94983278/148540695-296033f1-3363-40ba-a874-c23b6044be5a.png)
 
-Clone this projects repository from GitHub using the following command ”git@github.com:epocaterrasus/CU-Assignment2-Loan_Analyzer_Improved.git”
+Clone this projects repository from GitHub using the following command 
+```git@github.com:epocaterrasus/CU-Assignment2-Loan_Analyzer_Improved.git```
 
 ---
 
@@ -69,10 +70,30 @@ This section should include screenshots, code blocks, or animations explaining h
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+Edgar Pocaterra ï¿½ epocaterra@protonmail.ch / +1 806 283 5455
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT License
+
+Copyright (c) 2022 epocaterrasus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
