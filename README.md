@@ -81,11 +81,11 @@ Clone this project's repository from GitHub using the following command
 
 The first step is to be in the correct folder in which you have downloaded the repository in Step 3. You can confirm that you have all the correct documents/folders by using the command ```ls```, the following files and folders should appear:
 
-*data
-*qualifier
-*app.py
-*LICENSE
-*README.md
+* data
+* qualifier
+* app.py
+* LICENSE
+* README.md
 
 ![image](https://user-images.githubusercontent.com/94983278/148553378-3f98e7ee-ea22-4f70-9d9b-b95b4c6eddce.png)
 
@@ -110,6 +110,7 @@ Enter ```./data/daily_rate_sheet.csv``` and hit enter.
 ### 3. Enter your inputs
 
 The program will now prompt you to enter your:
+
 * Credit Score
 * Current Amount of Monthly Debt
 * Current Monthly Income
@@ -145,7 +146,7 @@ This program has two options:
 
 ## Contributors
 
-Edgar Pocaterra � epocaterra@protonmail.ch / +1 806 283 5455
+Edgar Pocaterra - epocaterra@protonmail.ch / +1 806 283 5455
 
 ---
 
