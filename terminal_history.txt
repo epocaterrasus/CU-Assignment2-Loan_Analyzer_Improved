@@ -1,0 +1,50 @@
+  485   cd ..
+  486  cd ..
+  487  cd ..
+  488  clear
+  489  cd .. CU-Assignment2-Loan_Analyzer_Improved/
+  490  clear
+  491  cd "CU-Assignment2-Loan_Analyzer_Improved/"
+  492  ls
+  493  winpy python app.py
+  494  winpty app.py
+  495  clear
+  496  winpty python app.pty
+  497  clear
+  498  winpty python app.py
+  499  clear
+  500  winpty python app.py
+  501  conda activate dev
+  502  clear
+  503  cd Desktop/
+  504  cd CU-Assignment2-Loan_Analyzer_Improved/
+  505  clear
+  506  winpty python app.py
+  507  clear
+  508  winpty python app.py
+  509  cd..
+  510  cd ..
+  511  cd Columbia\ University\ Bootcamp/
+  512  cd Challenges/
+  513  cd "Second Challenge"/
+  514  cd "Starter_Code - Copy"/
+  515  ls
+  516  cd Starter_Code/
+  517  git add README.md
+  518  ls
+  519  cd loan_qualifier_app/
+  520  ls
+  521  git add README.md
+  522  git commit -m "Final ReadMe File"
+  523  git push origin main
+  524  git add README.md
+  525  git commit -m "Revised Final README"
+  526  git push origin main
+  527  git add app.py
+  528  git commit -m "Final Version - with Comments"
+  529  git push origin
+  530  git add .data
+  531  git add data
+  532  git commit -m "Includes qualifying_loans output"
+  533  git push origin main
+  534  history 50 > terminal_history.txt
