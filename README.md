@@ -26,18 +26,19 @@ The following technologies were used to build and deploy this application:
 
 ## Installation Guide
 
-1. Install Python 3.9.7
+###1. Install Python 3.9.7
 
-For installing Python 3.9.7 you can find the Installation Files for both Windows/Mac OS in the following link: [I'm an inline-style link with title](https://www.python.org/downloads/release/python-397/ "Python Installation Guide")
+For installing Python 3.9.7 you can find the Installation Files for both Windows/Mac OS in the following link
+ [Python Installation Guide](https://www.python.org/downloads/release/python-397/ "Python Installation Guide")
 
 
-If you require assistance installing it, you can follow the following videos for guidance:
-https://www.youtube.com/watch?v=uSVl7gRXP80 (Windows OS)
-https://www.youtube.com/watch?v=r6bBaj797t8 (Mac OS)
+If you require assistance installing it, you can follow the following videos for guidance
+[Youtube Video Python Installation Guide - Windows](https://www.youtube.com/watch?v=uSVl7gRXP80 "Python Installation Video - Windows") 
+[Youtube Video Python Installation Guide - Mac](https://www.youtube.com/watch?v=r6bBaj797t8 "Python Installation Video - Mac") 
 
-2. Installing Required Libraries (Fire and Questionary)
+###2. Installing Required Libraries (Fire and Questionary)
 
-a. Installing Fire
+####a. Installing Fire
 
 ![image](https://user-images.githubusercontent.com/94983278/148540562-7ba2de97-046a-48f8-919d-127144e24e67.png)
 
@@ -45,10 +46,11 @@ To install Fire 0.3.1 use the following command in your GitBash/Terminal applica
 
 ```pip install fire==0.3.1```
 
-If you require additional assistance installing Fire or would like to expand your knowledge of the library, here is a good resource from the developers: https://google.github.io/python-fire/guide/
+If you require additional assistance installing Fire or would like to expand your knowledge of the library, here is a good resource from the developers 
+[Fire Python Guide](https://google.github.io/python-fire/guide/ "Fire Python Guide")
 
 
-b. Installing Questionary
+####b. Installing Questionary
 
 ![image](https://user-images.githubusercontent.com/94983278/148540628-f5b83a86-f3c6-4a98-bb41-cc04392ac398.png)
 
@@ -56,12 +58,13 @@ To install Questionary 1.5.2 use the following command in your GitBash/Terminal 
 
 ```pip install questionary==1.5.2```
 
-If you require additional assistance installing Fire or would like to expand your knowledge of the library, here is a good resource from the developers: https://pypi.org/project/questionary/
+If you require additional assistance installing Questionary or would like to expand your knowledge of the library, here is a good resource from the developers
+ [Questionary Python Guide](https://pypi.org/project/questionary/ "Questionary Python Guide")
 
 
-3. Installing the Loan Qualifier Application
+###3. Installing the Loan Qualifier Application
 
-Navigate to your desired location where you would like to save the documents for this application. You can do this by using the �cd� command followed by a space and the file path inside quotations ��. In my example I have gone to Desktop.
+Navigate to your desired location where you would like to save the documents for this application. You can do this by using the ```cd``` command followed by a space and the file path inside quotations ```" file path "```. In my example I have gone to Desktop.
 
 
 ![image](https://user-images.githubusercontent.com/94983278/148540695-296033f1-3363-40ba-a874-c23b6044be5a.png)
